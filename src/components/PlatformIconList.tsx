@@ -36,7 +36,7 @@ const PlatformIconList = ({ platforms }: Props) => {
     // if a whole number for marginY without a unit (ex: 1, instead of '4px' ) it will be a multiple of theme.space.value.
     <HStack marginY={1}>
       {platforms.map((platform) => (
-        <Icon id={platform.id} as={iconMap[platform.slug]} color="gray.500" />
+        <Icon key={platform.id} as={iconMap[platform.slug]} color="gray.500" />
       ))}
     </HStack>
   );
