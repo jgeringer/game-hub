@@ -11,7 +11,9 @@ export interface Game {
     id: number;
     name: string;
     background_image: string;
-    parent_platforms: { platform: Platform };
+    parent_platforms: {
+      map(arg0: (p: any) => any): Platform[]; platform: Platform 
+};
     metacritic: number;
     rating_top: number;
 }

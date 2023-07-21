@@ -40,7 +40,6 @@ const GenreList = ({ onSelectGenre, selectedGenre }: Props) => {
               />
               <Button
                 onClick={() => {
-                  console.log(genre);
                   onSelectGenre(genre);
                 }}
                 fontSize="lg"
